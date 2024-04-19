@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页 - ChiliChill同人粉丝站</title>
+	<link rel="stylesheet" href="/public/css/index.css" rel="stylesheet">
+	<script>
+		function openNav() {
+			document.getElementById("Sidenav").style.width = "300px";
+			document.getElementById("main").style.marginLeft = "300px";
+			document.getElementById("Topnav").style.height = "0";
+			document.getElementById("main").style.marginTop= "0";
+		}
+		function closeNav() {
+			document.getElementById("Sidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft= "0";
+			document.getElementById("Topnav").style.height = "70px";
+			document.getElementById("main").style.marginTop = "70px";
+		}
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/page/about/main.js"></script>
+  </body>
+</html>
